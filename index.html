@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Visitor Registration System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <!-- JUMBOTRON -->
+      <div class="jumbotron">
+        <h1 class="display-3">Visitor Registration System</h1>
+        <p class="lead">When the user checks-in at the front desk, use the fields below to walkthrough the registration process.</p>
+      </div>
+      <!-- FORM -->
+      <form method="POST" action="/registration">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+          <label for="emailAddress">Email</label>
+          <input type="email" class="form-control" name="emailAddress" id="emailAddress" aria-describedby="emailHelp" placeholder="Email">
+          <small id="emailHelp" class="form-text text-muted">Visitor's email will only be used for official communication.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Visitor's Image</label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+        <div class="alert alert-info" role="alert">A future extension could take the user's image with a camera and use that image.</div>
+        <div class="form-group">
+          <label for="employeeHost">Employee Host</label>
+          <select class="form-control" id="employeeHost" name="employeeHost">
+            <option value="1">Mark Irish</option>
+            <option value="2">Jesse Gorzinski</option>
+            <option value="3">Abdirahim Musse</option>
+            <option value="4">Kevin Adler</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
